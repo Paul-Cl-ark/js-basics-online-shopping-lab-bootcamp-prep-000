@@ -57,7 +57,9 @@ let cart = getCart();
 }
 
 function placeOrder(cardNumber) {
-  function empty() 
+  function empty() {
+    cart.length = 0; 
+  }
   if (!cardNumber) {
   return "Sorry, we don't have a credit card on file for you.";
   } else {
