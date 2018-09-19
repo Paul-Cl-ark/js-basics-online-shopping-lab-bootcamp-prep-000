@@ -57,8 +57,9 @@ let cart = getCart();
    return "That item is not in your cart.";
 }
 
-function placeOrder(cardNumber) {}
+function placeOrder(cardNumber) {
   if (!cardNumber) {
   return "Sorry, we don't have a credit card on file for you.";
   } 
+}
 
