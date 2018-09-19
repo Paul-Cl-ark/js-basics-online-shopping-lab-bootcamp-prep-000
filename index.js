@@ -57,12 +57,11 @@ let cart = getCart();
 }
 
 function placeOrder(cardNumber) {
-  }
   if (!cardNumber) {
   return "Sorry, we don't have a credit card on file for you.";
   } else {
          var checkOut = total();
-         cart = 0
+         cart = [];
     return `Your total cost is $${checkOut}, which will be charged to the card ${cardNumber}.`;
   }
 }
